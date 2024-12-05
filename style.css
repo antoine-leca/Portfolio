@@ -32,7 +32,7 @@ body {
             text-decoration: none;
         }
         .menuhd {
-            visibility: hidden;
+            display: none;
         }
         button {
             height: 30px;
@@ -144,89 +144,133 @@ body {
             }
         }
     }
-    .s1t {
-        padding-top: 20px;
-        margin-left: 30px;
-        text-transform: uppercase;
-        .t {
-            div {
-                display: flex;
-                gap: 10px;
-                h5 {
-                    margin: 0 0 5px 0;
+    main {
+        .s1t {
+            padding-top: 20px;
+            margin-left: 30px;
+            text-transform: uppercase;
+            .t {
+                div {
+                    display: flex;
+                    gap: 10px;
+                    h5 {
+                        margin: 0 0 5px 0;
+                        font-family: var(--font-m);
+                    }
+                    h4 {
+                        font-family: var(--font-st);
+                        font-size: 16px;
+                    }
+                }
+                h1 {
+                    margin: 5px 0 5px 0;
                     font-family: var(--font-m);
+                }
+                h5 {
+                    font-size: 16px;
+                }
+                h1 {
+                    font-size: 24px;
                 }
                 h4 {
                     font-family: var(--font-st);
-                    font-size: 16px;
+                    font-size: 14px;
                 }
             }
-            h1 {
-                margin: 5px 0 5px 0;
-                font-family: var(--font-m);
-            }
-            h5 {
-                font-size: 16px;
-            }
-            h1 {
-                font-size: 24px;
-            }
-            h4 {
-                font-family: var(--font-st);
-                font-size: 14px;
+            .beforeSkills{
+                .skills {
+                    display: none;
+                }
             }
         }
-        .skills {
-            display: none;
-        }
-    }
-    .s2i {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-        img {
-            object-fit: cover;
-            width: 270px;
-            height: 300px;
-            border-radius: 50px;
-        }
-    }
-    .s3p {
-        margin: 30px;
-        p {
-            font-family: var(--font-m);
-            text-align: center;
-            font-size: 20px;
-        }
-    }
-    .s4smN {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        .links {
-            a {
-                text-decoration: none;
-                height: 50px;
+        .s2 {
+            .s2i {
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
                 img {
-                    height: 50px;
-                    width: 50px;
-                    border-radius: 55px;
+                    object-fit: cover;
+                    width: 270px;
+                    height: 300px;
+                    border-radius: 15px;
+                }
+            }
+            .s3p {
+                margin: 30px;
+                p {
+                    font-family: var(--font-m);
+                    text-align: center;
+                    font-size: 20px;
+                }
+            }
+            .s4 {
+                .s4in {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+                    .beforeLinks {
+                        .links {
+                            a {
+                                text-decoration: none;
+                                height: 50px;
+                                img {
+                                    height: 50px;
+                                    width: 50px;
+                                    border-radius: 55px;
+                                }
+                            }
+                        }
+                    }
+                    h1 {
+                        font-family: var(--font-m);
+                        font-size: 40px;
+                        text-transform: uppercase;
+                    }
                 }
             }
         }
-        h1 {
-            font-family: var(--font-m);
-            font-size: 40px;
+        .beforeSkills {
+            width: 100%;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            .skills {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                div {
+                    display: flex;
+                    justify-content: center;
+                    width: 80%;
+                    margin-bottom: 20px;
+                    label {
+                        padding-left: 15px;
+                        font-family: var(--font-m);
+                        font-size: 24px;
+                    }
+                }
+                .img {
+                    width: 90%;
+                    height: auto;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    img {
+                        width: 90px;
+                        height: 90px;
+                    }
+                }
+            }
         }
-    }
+    }   
 }
 
-@media only screen and (min-width: 800px){ 
+@media only screen and (min-width: 1000px){ 
     body {
         header {
             .menuhd {
-                visibility: visible;
+                display: flex;
                 width: 70vw;
                 ul {
                     width: 100%;
@@ -269,34 +313,106 @@ body {
                         }
                     }
                     h1 {
-                        font-size: 60px;
+                        line-height: 70px;
+                        font-size: 80px;
                     }
                     h4 {
                         font-size: 40px;
                     }
                 }
-                .skills {
-                    width: 40%;
+                .beforeSkills {
+                    margin-top: 0;
+                    width: 50%;
                     display: flex;
-                    flex-wrap: wrap;
-                    div {
-                        label {
-                            font-family: var(--font-m);
-                            font-size: 24px;
-                        }
-                    }
-                    .img {
-                        width: 100%;
-                        height: auto;
+                    justify-content: center;
+                    align-items: flex-start;
+                    .skills {
                         display: flex;
-
-                        gap: 10px;
-                        img {
-                            width: 80px;
-                            height: 80px;
+                        flex-direction: column;
+                        align-items: center;
+                        div {
+                            display: flex;
+                            justify-content: flex-start;
+                            width: 60%;
+                            label {
+                                padding-left: 15px;
+                                font-family: var(--font-m);
+                                font-size: 24px;
+                            }
+                        }
+                        .img {
+                            width: 60%;
+                            height: auto;
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 10px;
+                            img {
+                                width: 90px;
+                                height: 90px;
+                            }
                         }
                     }
                 }
+            }
+            .s2 {
+                display: flex;
+                align-items: end;
+                .s2i {
+                    margin-top: 30px;
+                    img {
+                        margin: 0 0 0 30px;
+                        height: 55vh;
+                        width: 20vw;
+                    }
+                }
+                .s3p {
+                    width: 29vw;
+                    margin: 0 30px 0 30px;
+                    p {
+                        text-align: start;
+                    }
+                }
+                .s4 {
+                    width: 40vw;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    .s4in {
+                        .beforeLinks {
+                            height: 100%;
+                            width: 100%;
+                            display: flex;
+                            justify-content: flex-start;
+                            .links {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                width: 35%;
+                                a {
+                                    height: 100%;
+                                    img {
+                                        border: solid 1px var(--bg-m);
+                                        height: 55px;
+                                        width: 55px;
+                                    }
+                                }
+                                a:hover {
+                                    img {
+                                        box-shadow: -5px -2px 0px 3px #000000;
+                                        transition: 0.5s ease;
+                                    }
+                                }
+                            }
+                        }
+                        h1 {
+                            line-height: 70px;
+                            font-size: 80px;
+                        }
+                    }
+                }
+            }
+            .beforeSkills {
+                display: none;
             }
         }
     }
