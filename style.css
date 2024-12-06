@@ -69,12 +69,6 @@ body {
                     translate: -100% 0;
                 }
             }
-            &:popover-close {
-                translate: 0 0;
-                @starting-style {
-                    translate: 0 -100%
-                }
-            }
             button {
                 display: none;
             }
