@@ -146,37 +146,75 @@ body {
     }
     main {
         margin: 20px 30px 0 30px;
+        h1 {
+            text-align: center;
+        }
         .sFS {
             label {
                 font-size: 20px;
                 font-family: var(--font-m);
+                border-bottom: 1px solid;
+                margin-left: 20px;
             }
             details {
+                width: fit-content;
                 display: flex;
-                flex-direction: column;
+                
                 summary {
+                    font-family: var(--font-m);
                     font-size: 20px;
+                    display: flex;
+                    align-items: center;
+                    height: 50px;
                     visibility: visible;
-                    border-bottom: 1px solid;
                     padding-bottom: 5px;
+                    gap: 10px;
+                    img {
+                        height: 20px;
+                        width: 20px;
+                    }
+                    details {
+                        height: 60px;
+                    }
+                }
+                summary:hover,
+                summary:active {
+                    background-color: #11413a;
                 }
                 img {
                     width: 350px;
                 }
-                #FMDM {
-                    height: 200px;
-                    width: auto;
-                }
             }
+        }
+        hr {
+            width: 85vw;
+            margin: 5px 0 20px 0;
         }
         .sP {
             label {
                 font-size: 20px;
                 font-family: var(--font-m);
+                margin-left: 20px;
+                border-bottom: 1px solid;
             }
             details {
+                font-family: var(--font-m);
+                width: fit-content;
                 summary {
+                    display: flex;
+                    align-items: center;
+                    height: 50px;
                     font-size: 20px;
+                    background-color: rgb(48, 48, 48);
+                    gap: 10px;
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+                summary:hover,
+                summary:active {
+                    background-color: #11413a;
                 }
                 img {
                     width:350px;
