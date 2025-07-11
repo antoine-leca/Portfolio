@@ -16,7 +16,7 @@ const Projets = () => {
     const projets = [
         {
             name: "Movela",
-            description: "Site répertoire de film type Allociné réalisé avec PHP, Javascript et l'API The Movie Database (TMDb).",
+            description: "Site répertoire de film réalisé avec PHP, Javascript et l'API TMDb.",
             compétences: ["API", "PHP", "JS", "MySQL", "Tailwind"],
             link: "Movela/",
             image: movelaImg,
@@ -65,27 +65,29 @@ const Projets = () => {
                 <title>Antoine LECA - Projets</title>
                 <div className='divider divider-start pl-6 text-2xl main-font-m'>Description</div>
                 <div className='flex justify-center items-center flex-col'>
-                    <p className='w-9/10 text-xl mb-4'>Approche Mobile First tout au long des mes formations et de mes projets.<br/><br/> Depuis ma découverte de Tailwind en Mars 2024 je l'ai introduit petit à petit dans mes projets et je suis aujourd'hui capable d'en faire sans même avoir de css (sauf quelques exceptions ex: animations diverses).<br/><br/> J'ai ensuite découvert l'extension de Tailwind: DaisyUI, qui améliore tailwind en un semblant de Bootstrap en incluant des composants modernes.</p>
+                    <p className='w-9/10 text-xl mb-4 p-2 lg:p-0'>Approche Mobile First tout au long des mes formations et de mes projets.<br/><br/> Depuis ma découverte de Tailwind en Mars 2024 je l'ai introduit petit à petit dans mes projets et je suis aujourd'hui capable d'en faire sans même avoir de fichier css (sauf quelques exceptions ex: animations diverses).<br/><br/> J'ai ensuite découvert l'extension de Tailwind: DaisyUI, qui améliore tailwind en un semblant de Bootstrap en incluant des composants modernes.</p>
                 </div>
                 <div className='divider divider-start pl-6 text-2xl main-font-m'>Projets</div>
                 <section className='grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-12 gap-4'>
                     {projets.map((projet) => (
-                        <div key={projet.index} className="card w-full lg:max-w-96 lg:max-h-96 bg-base-100 shadow-sm">
+                        <div key={projet.index} className="card w-full lg:max-w-96 lg:max-h-120 bg-base-100 shadow-sm">
                             <figure>
                                 <img
                                 src={projet.image}
-                                alt={`image du projet ${projet.name}`} />
+                                alt={`image du projet ${projet.name}`} 
+                                className='min-h-48'
+                                />
                             </figure>
                             <div className="card-body">
                                 <h2 className="card-title main-font-m">{projet.name}</h2>
                                 <p className='text-lg'>{projet.description}</p>
-                                <div className="flex flex-wrap gap-2 mt-2">
+                                <div className="flex flex-wrap gap-2 mb-2">
                                     {projet.compétences.map((compétence, index) => (
-                                        <div key={index} className="badge badge-soft badge-accent">{compétence}</div>
+                                        <div key={index} className="badge bg-[#0E3530] border-none text-white">{compétence}</div>
                                     ))}
                                 </div>
                                 <div className="card-actions justify-end">
-                                    <a className='btn btn-neutral' href={`${domain}${projet.link}`}>Voir le projet</a>
+                                    <a className='btn btn-[#FFFFFF]' href={`${domain}${projet.link}`}>Voir le projet</a>
                                 </div>
                             </div>
                         </div>
