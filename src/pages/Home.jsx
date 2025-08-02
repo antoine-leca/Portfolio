@@ -45,12 +45,12 @@ const Home = () => {
         cssIcon,
         bootstrapIcon
     ];
-    const duplicatedIcons = [...icons, ...icons, ...icons];
+    const duplicatedIcons = [...icons, ...icons, ...icons, ...icons, ...icons, ...icons ];
 
     return (
         <div>
             <Header/>
-            <main>
+            <main className='min-h-[80vh] flex flex-col justify-between'>
                 <title>Antoine LECA</title>
                 <section className='flex flex-col items-center'>
                     <div className="carousel glass w-full overflow-hidden">
