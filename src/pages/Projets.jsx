@@ -87,7 +87,7 @@ const Projets = () => {
                                     ))}
                                 </div>
                                 <div className="card-actions justify-end">
-                                    <a className='btn btn-[#FFFFFF]' href={`${domain}${projet.link}`}>Voir le projet</a>
+                                    <a className='btn btn-[#FFFFFF]' target='blank' href={`${domain}${projet.link}`}>Voir le projet</a>
                                 </div>
                             </div>
                         </div>
