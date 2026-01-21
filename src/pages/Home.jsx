@@ -20,7 +20,7 @@ import cssIcon from '../assets/icons/css.svg';
 import bootstrapIcon from '../assets/icons/bootstrap.svg';
 
 // Import des images
-import profileImg from '../assets/img/19362653.jpg';
+import profileImg from '../assets/img/black.jpg';
 import linkedinIcon from '../assets/icons/linkedin-logo.png';
 import githubLogoIcon from '../assets/icons/github.png';
 import emailIcon from '../assets/icons/email.png';
